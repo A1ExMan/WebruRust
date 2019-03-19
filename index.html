@@ -40,10 +40,91 @@
             Статьи
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="#">Книги</a>
+<!--             <a class="dropdown-item" href="#">Книги</a>
             <a class="dropdown-item" href="#"></a>
             <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">Something else here</a>
+            <a class="dropdown-item" href="#">Something else here</a> -->
+            <div class="container">
+              <div class="panel-group" id="accordionMenu" role="tablist" aria-multiselectable="true">
+                <div class="panel panel-default">
+                  <div class="panel-heading" role="tab" id="headingOne">
+                    <h4 class="panel-title">
+                    <a role="button" data-toggle="collapse" data-parent="#accordionMenu" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    Книги
+                    </a>
+                  </h4>
+                  </div>
+                  <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                    <div class="panel-body">
+                      <ul class="nav">
+                        <li><a href="#">- Язык программирования Rust</a></li>
+                        <li><a href="#">- Маленькая книжка по макросам в Rust</a></li>
+                        <li><a href="#">- Растономикон</a></li>
+                        <li><a href="#">- Rust на примерах</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="panel panel-default">
+                  <div class="panel-heading" role="tab" id="headingTwo">
+                    <h4 class="panel-title">
+                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordionMenu" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      Статьи
+                    </a>
+                    </h4>
+                    </div>
+                    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                      <div class="panel-body">
+                        <ul class="nav">
+                          <li><a href="#">- Документация по Cargo</a></li>
+                          <li><a href="#">- Подходит ли мне Rust?</a></li>
+                          <!-- <li><a href="#">item 3</a></li>
+                          <li><a href="#">item 4</a></li> -->
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="headingThree">
+                      <h4 class="panel-title">
+                      <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordionMenu" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Мне нужна помощь
+                      </a>
+                    </h4>
+                    </div>
+                    <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                      <div class="panel-body">
+                        <ul class="nav">
+                          <li><a href="#">- Чат для новичков</a></li>
+                          <li><a href="#">- Чат для сложных вопросов</a></li>
+                          <li><a href="#">- Stackoverflow на русском</a></li>
+                          <li><a href="#">- Форум</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+    
+    
+            <!--     <div class="panel panel-default">
+                  <div class="panel-heading" role="tab" id="headingFour">
+                    <h4 class="panel-title">
+                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordionMenu" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                      Menu 3
+                    </a>
+                  </h4>
+                  </div>
+                  <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+                    <div class="panel-body">
+                      <ul class="nav">
+                        <li><a href="#">item 1</a></li>
+                        <li><a href="#">item 2</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                
+              </div>
+            </div> -->
           </div>
         </li>
         <li class="nav-item dropdown">
@@ -62,7 +143,7 @@
             Проекты
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="example.html">Example page</a>
             <a class="dropdown-item" href="#">Another action</a>
             <div class="dropdown-divider"></div>
             <a class="dropdown-item" href="#">Something else here</a>
@@ -104,9 +185,11 @@
       <div class="row align-items-start1">
         <div class="col-sm">
           <h5 class="border-bottom border-primary w-50">Свежие Новости</h5>
+          <!-- <hr class="deep-dark accent-2 mb-0 mt-0 d-inline-block mx-auto" style="width:60px;"> -->
+
 
           
-            <div class="card mb-3 hoverable rare-wind-gradient">
+            <div class="card mb-3 hoverable bg-light">
 <!--               <div class="card-header">
                 Featured
               </div> -->
@@ -119,11 +202,11 @@
                 <div class="card-footer text-muted">
                   2 days ago 
                   <!-- <a href="#" class="btn btn-primary bl-auto">Переход куда-нибудь</a> -->
-                   <a href="#" class="card-link float-right">Читать</a>
+                   <a href="#" class="card-link float-right text-black-50">Читать</a>
                 </div>
             </div>
 
-            <div class="card mb-3 hoverable rare-wind-gradient">
+            <div class="card mb-3 hoverable bg-light">
 <!--               <div class="card-header">
                 Featured
               </div> -->
@@ -135,11 +218,11 @@
                 <div class="card-footer text-muted">
                   2 days ago 
                   <!-- <a href="#" class="btn btn-primary bl-auto">Переход куда-нибудь</a> -->
-                   <a href="#" class="card-link float-right">Читать</a>
+                   <a href="#" class="card-link float-right text-black-50">Читать</a>
                 </div>
             </div>
 
-            <div class="card mb-3 hoverable rare-wind-gradient">
+            <div class="card mb-3 hoverable bg-light">
 <!--               <div class="card-header">
                 Featured
               </div> -->
@@ -151,7 +234,7 @@
                 <div class="card-footer text-muted">
                   2 days ago 
                   <!-- <a href="#" class="btn btn-primary bl-auto">Переход куда-нибудь</a> -->
-                   <a href="#" class="card-link float-right">Читать</a>
+                   <a href="#" class="card-link float-right text-black-50">Читать</a>
                 </div>
             </div>            
         </div>
@@ -161,7 +244,7 @@
 
 
 
-            <div class="card mb-3 hoverable" style="background-color: #eeeeee;">
+            <div class="card mb-3 hoverable bg-light">
 <!--               <div class="card-header">
                 Featured
               </div> -->
@@ -171,13 +254,13 @@
                 <!-- <a href="#" class="btn btn-primary">Переход куда-нибудь</a> -->
               </div>
                 <div class="card-footer text-muted">
-                  2 days ago 
+                  19 марта 2019 
                   <!-- <a href="#" class="btn btn-primary bl-auto">Переход куда-нибудь</a> -->
-                   <a href="#" class="card-link float-right">Читать</a>
+                   <a href="#" class="card-link float-right text-black-50">Читать</a>
                 </div>
             </div>
 
-            <div class="card mb-3 hoverable" style="background-color: #eeeeee;">
+            <div class="card mb-3 hoverable bg-light">
 <!--               <div class="card-header">
                 Featured
               </div> -->
@@ -187,9 +270,9 @@
                 <!-- <a href="#" class="btn btn-primary">Переход куда-нибудь</a> -->
               </div>
                 <div class="card-footer text-muted">
-                  2 days ago 
+                  16 Февраля 2019
                   <!-- <a href="#" class="btn btn-primary bl-auto">Переход куда-нибудь</a> -->
-                   <a href="#" class="card-link float-right">Читать</a>
+                   <a href="#" class="card-link float-right text-black-50">Читать</a>
                 </div>
             </div>
           
@@ -198,33 +281,33 @@
         <div class="col-sm">
             <h5 class="border-bottom border-success w-50">События</h5>
 
-            <div class="card mb-3 hoverable" style="background-color: #eeeeee;">
+            <div class="card mb-3 hoverable bg-light">
               <div class="card-body">
                 <h5 class="card-title">Meetup Parity Technologes</h5>
                 <h6 class="card-subtitle mb-2 text-muted">Дата мероприятия: 16 Декабря 2018</h6>
                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="card-link float-left">Собирается придти</a>
-                <a href="#" class="card-link float-right">Подробнее</a>
+                <span class="py-1 pr-1 border border-left-0 border-dark rounded-pill"><span class="text-center p-1 border border-dark rounded-circle text-muted" style="background-color: #eeeeee;">50</span><a href="#" class="card-link text-muted pl-1">Собирается придти</a></span>
+                <a href="#" class="card-link float-right text-muted">Подробнее</a>
               </div>
             </div>
 
-            <div class="card mb-3 hoverable" style="background-color: #eeeeee;">
+            <div class="card mb-3 hoverable bg-light">
               <div class="card-body">
                 <h5 class="card-title">Meetup Parity Technologes</h5>
                 <h6 class="card-subtitle mb-2 text-muted">Дата мероприятия: 16 Декабря 2018</h6>
                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="card-link float-left">Собирается придти</a>
-                <a href="#" class="card-link float-right">Подробнее</a>
+                <span class="py-1 pr-1 border border-left-0 border-dark rounded-pill"><span class="text-center p-1 border border-dark rounded-circle text-muted" style="background-color: #eeeeee;">50</span><a href="#" class="card-link text-muted pl-1">Собирается придти</a></span>
+                <a href="#" class="card-link float-right text-muted">Подробнее</a>
               </div>
             </div>
 
-            <div class="card mb-3 hoverable" style="background-color: #eeeeee;">
+            <div class="card mb-3 hoverable bg-light">
               <div class="card-body">
                 <h5 class="card-title">Meetup Parity Technologes</h5>
                 <h6 class="card-subtitle mb-2 text-muted">Дата мероприятия: 16 Декабря 2018</h6>
                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="card-link float-left">Собирается придти</a>
-                <a href="#" class="card-link float-right">Подробнее</a>
+                <span class="py-1 pr-1 border border-left-0 border-dark rounded-pill"><span class="text-center p-1 border border-dark rounded-circle text-muted" style="background-color: #eeeeee;">50</span><a href="#" class="card-link text-muted pl-1">Собирается придти</a></span>
+                <a href="#" class="card-link float-right text-muted">Подробнее</a>
               </div>
             </div>
         </div>
@@ -244,8 +327,8 @@
 
 <footer class="page-footer font-small shadow-sm-top pt-0" style="background-color: #2E2E2E">
     <div class="container">
-      <div class="row py-4 d-flex align-items-center">
-        <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
+      <div class="row py-2 d-flex align-items-center">
+        <div class="col-md-6 col-lg-5 text-center text-md-left mb-2 mb-md-0">
           <h6 class="mb-0 white-text">
             <a href="#" class="fb-ic ml-auto">
               <i class="fab fa-pinterest white-text mr-2"></i>
@@ -255,35 +338,35 @@
         </div>
         <div class="col-md-6 col-lg-7 text-center text-md-right">
           <a href="#" class="fb-ic ml-0">
-            <i class="fab fa-facebook white-text mr-4"></i>
+            <i class="fab fa-facebook white-text mr-3"></i>
           </a>
           <a href="#" class="fb-ic ml-0">
-            <i class="fab fa-twitter white-text mr-4"></i>
+            <i class="fab fa-twitter white-text mr-3"></i>
           </a>
           <a href="#" class="fb-ic ml-0">
-            <i class="fab fa-instagram white-text mr-4"></i>
+            <i class="fab fa-instagram white-text mr-3"></i>
           </a>
           <a href="#" class="fb-ic ml-0">
-            <i class="fab fa-gitter white-text mr-4"></i>
+            <i class="fab fa-gitter white-text mr-3"></i>
           </a>
           <a href="#" class="fb-ic ml-0">
-            <i class="fab fa-telegram white-text mr-4"></i>
+            <i class="fab fa-telegram white-text mr-3"></i>
           </a>
         </div>
       </div>
     </div>
 
-  <div class="container mt-5 mb-0 text-center text-md-left">
+  <div class="container mt-2 mb-0 text-center text-md-left">
     <div class="row mt-3">
-      <div class="col-md-3 col-lg-4 col-xl-3 mb-4">
+      <div class="col-md-3 col-lg-4 col-xl-3 mb-2">
         <h6 class="text-uppercase font-weight-bold"><strong>Our Company</strong></h6>
-        <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width:60px;">
+        <hr class="deep-purple accent-2 mb-2 mt-0 d-inline-block mx-auto" style="width:60px;">
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis animi deserunt, tenetur illo.</p>
       </div>
 
-      <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+      <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-2">
         <h6 class="text-uppercase font-weight-bold"><strong>Team</strong></h6>
-        <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width:60px;">
+        <hr class="deep-purple accent-2 mb-2 mt-0 d-inline-block mx-auto" style="width:60px;">
         <p><a href="#">ruRust</a></p>
         <p><a href="#">ruRust</a></p>
         <p><a href="#">ruRust</a></p>
@@ -291,7 +374,7 @@
 
       <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
         <h6 class="text-uppercase font-weight-bold"><strong>Links</strong></h6>
-        <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width:60px;">
+        <hr class="deep-purple accent-2 mb-2 mt-0 d-inline-block mx-auto" style="width:60px;">
         <p><a href="#">Account</a></p>
         <p><a href="#">Help</a></p>
         <p><a href="#">ruRust</a></p>
@@ -299,13 +382,15 @@
 
       <div class="col-md-4 col-lg-3 col-xl-3">
         <h6 class="text-uppercase font-weight-bold"><strong>Contact</strong></h6>
-        <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width:60px;">
+        <hr class="deep-purple accent-2 mb-2 mt-0 d-inline-block mx-auto" style="width:60px;">
         <p><i class="fa fa-home mr-3"></i>Russia</p>
         <p><i class="fa fa-envelope mr-3"></i>info@ruRust.dev</p>
         <p><i class="fa fa-phone mr-3"></i>+7 909 533 45 67</p>
       </div>
     </div>
   </div>
+
+
     <div class="footer-copyright text-center py-3">© 2019 Copyright:
     <a href="#">О Сайте</a>
   </div>
