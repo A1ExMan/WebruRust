@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>sample page</title>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
+  <!-- Bootstrap core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <!-- Material Design Bootstrap -->
+  <link href="css/mdb.min.css" rel="stylesheet">
+  <!-- Your custom styles (optional) -->
+  <link href="css/style.css" rel="stylesheet">
+  <link rel="shortcut icon" href="img/rust-logo-16x16-blk.png" type="image/png">
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-none">
+      <a class="navbar-brand" href="index.html">
+      <img src="img/rust-logo-512x512.png" width="30" height="30" class="d-inline-block align-top" alt="Icon ruRust">
+      Rust Russian
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+       <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+  <!--       <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li> -->
+  <!--       <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li> -->
+        <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Учим Rust
+                    </a>
+                <div class="dropdown-menu">
+                    <form class="accordion" id="accordionExample">
+                        <div>
+                            <a class="nav-link border-bottom" style="border-image: radial-gradient(#000000, #ffffff) 5;" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                Книги
+                            </a>
+                            <div id="collapseOne" class="collapse px-3 show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                                <a class="p-0 text-muted" href="#">Язык программирования Rust</a>
+                            </div>
+                            <div id="collapseOne" class="collapse px-3 show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                                <a class="p-0 text-muted" href="#">Маленькая книжка по макросам в Rust</a>
+                            </div>
+                            <div id="collapseOne" class="collapse px-3 show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                                <a class="p-0 text-muted" href="#">Растономикон</a>
+                            </div>
+                            <div id="collapseOne" class="collapse px-3 show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                                <a class="p-0 text-muted" href="#">Rust на примерах</a>
+                            </div>
+                        </div>
+                        <div>
+                            <a class="nav-link border-bottom" style="border-image: radial-gradient(#000000, #ffffff) 5;" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                Статьи
+                            </a>
+                            <div id="collapseTwo" class="collapse px-3" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                                <a class="p-0 text-muted" href="#">Документация по Cargo</a>
+                            </div>
+                            <div id="collapseTwo" class="collapse px-3" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                                <a class="p-0 text-muted" href="does-rust-suit-me.html">Подходит ли мне Rust?</a>
+                            </div>
+
+                        </div>
+                        <div>
+                            <a class="nav-link border-bottom" style="border-image: radial-gradient(#000000, #ffffff) 5;" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                Мне нужна помощь
+                            </a>
+                            <div id="collapseThree" class="collapse px-3" aria-labelledby="headingThree" data-parent="#accordionExample">
+                                <a class="p-0 text-muted" href="#">Чат для новичков</a>
+                            </div>
+                            <div id="collapseThree" class="collapse px-3" aria-labelledby="headingThree" data-parent="#accordionExample">
+                                <a class="p-0 text-muted" href="#">Чат для сложных вопросов</a>
+                            </div>
+                            <div id="collapseThree" class="collapse px-3" aria-labelledby="headingThree" data-parent="#accordionExample">
+                                <a class="p-0 text-muted" href="#">Stackoverflow на русском</a>
+                            </div>
+                            <div id="collapseThree" class="collapse px-3" aria-labelledby="headingThree" data-parent="#accordionExample">
+                                <a class="p-0 text-muted" href="#">Форум</a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            События
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Проекты
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="projects/index.html">Example page</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Новости
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Something else here</a>
+
+          </div>
+        </li>
+  <!--       <li class="nav-item">
+          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+        </li> -->
+      </ul>
+  <!--  <form class="form-inline">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form> -->
+    </div>
+  </nav>
+<!--   <hr class="my-4">
+  <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+  <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a> -->
+  </div>
+</header>
+
+  <main>
+    <div class="row bg-light">
+  <div class="col-sm-3 col-lg-2">
+    <nav id="navbar-example3" class="navbar navbar-light bg-light flex-column mt-4 hoverable">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <nav class="nav nav-pills flex-column">
+        <a class="nav-link active" href="#item-1">Item 1</a>
+        <nav class="nav nav-pills flex-column">
+          <a class="nav-link ml-3 my-1" href="#item-1-1">Item 1-1</a>
+          <a class="nav-link ml-3 my-1" href="#item-1-2">Item 1-2</a>
+        </nav>
+        <a class="nav-link" href="#item-2">Item2</a>
+        <a class="nav-link" href="#item-3">Item3</a>
+        <nav class="nav nav-pills flex-column">
+          <a class="nav-link ml-3 my-1" href="#item-3-1">Item 3-1</a>
+          <a class="nav-link ml-3 my-1" href="#item-3-2">Item 3-2</a>
+        </nav>
+      </nav>
+    </nav>
+  </div>
+
+  <div class="col-sm-8 col-lg-9 mb-4 h-20">
+    <div data-spy="scroll" class="overflow-auto scrollspy-example z-depth-4 mt-4 px-3" data-target="#navbar-example3" data-offset="0">
+      <h4 id="item-1">Item 1</h4>
+      <p>Ad leggings keytar, brunch id art party dolor labore. Pitchfork yr enim lo-fi before they sold out
+        qui. Tumblr farm-to-table bicycle rights whatever. Anim keffiyeh carles cardigan. Velit seitan Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis minus, exercitationem cumque, iste asperiores impedit neque, eos ut suscipit enim temporibus tenetur aliquam laborum eligendi veniam? Aliquid excepturi quos nam doloremque sit similique, voluptatem iusto obcaecati expedita, suscipit laudantium, dignissimos vel ipsam tenetur delectus nostrum fuga veniam. Error qui asperiores quas nam! Enim, ab! Sequi dolorum aut minus quo atque est saepe laudantium labore vel ipsum eligendi autem commodi ex, dolore qui ullam molestiae aspernatur veniam sapiente, assumenda facere placeat, optio. Sunt quod laborum in? Assumenda quis asperiores, ipsum a voluptate eligendi distinctio tempore facere vero, debitis, deserunt totam esse sunt minima explicabo illo iusto voluptatum. Ex natus totam iure ab quia mollitia, expedita similique. Dicta temporibus illo aliquam libero mollitia, laudantium asperiores dolores a sit quos. Sed autem quibusdam, numquam veniam nesciunt voluptatem, dolores maiores dignissimos illum tempora ipsa. Velit reiciendis ex voluptas amet, harum ea sunt similique incidunt eligendi cupiditate, officia. Fugiat eum architecto ipsa, facilis rerum doloremque nihil blanditiis, ab in quos hic placeat animi quo ad necessitatibus nisi praesentium, dignissimos autem nesciunt, non voluptas aliquam voluptate illo earum. Odit vero minima necessitatibus animi pariatur culpa assumenda quae hic quibusdam doloribus omnis ea placeat illo quaerat debitis beatae molestiae id quis ex, iste adipisci corrupti. Eveniet corrupti fugit atque delectus obcaecati dolor laborum, quasi, consequuntur magnam inventore ducimus iste consequatur nulla, amet officiis eligendi! Ad harum, in adipisci quidem ut minima obcaecati sapiente accusantium, possimus, impedit modi, numquam iste. Voluptates enim sequi veritatis, in eius temporibus ullam debitis optio illum adipisci accusamus quaerat impedit hic, officiis vero, sapiente? Dicta sint laborum eaque, voluptate, voluptates quam a voluptas ratione cum in tempore sed voluptatibus ipsam eius distinctio sapiente. Harum hic ea deleniti a delectus enim et saepe quas atque esse dignissimos reprehenderit distinctio illo laboriosam maxime, quibusdam earum?
+        mcsweeney's photo booth 3 wolf moon irure. Cosby sweater lomo jean shorts, williamsburg hoodie minim
+        qui you probably haven't heard of them et cardigan trust fund culpa biodiesel wes anderson aesthetic.
+        Nihil tattooed accusamus, cred irony biodiesel keffiyeh artisan ullamco consequat.</p>
+      <h5 id="item-1-1">Item 1-1</h5>
+      <p>Ad leggings keytar, brunch id art party dolor labore. Pitchfork yr enim lo-fi before they sold out
+        qui. Tumblr farm-to-table bicycle rights whatever. Anim keffiyeh carles cardigan. Velit seitan
+        mcsweeney's photo booth 3 wolf Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus, obcaecati totam dicta assumenda unde labore ipsa sint id nam libero dolorum rerum et nostrum ducimus odit atque voluptates dolorem. Dolorum culpa eligendi repellat molestias veniam vero exercitationem, quisquam nam possimus qui sunt quia debitis animi cumque enim commodi tempore dolore perspiciatis quam magnam nulla itaque tempora. Adipisci dolorem natus, vel, accusamus voluptatum fugiat minus error magnam quisquam inventore fuga eaque nisi culpa rerum similique libero itaque explicabo qui corrupti quasi commodi quaerat. Nihil ipsam unde vel provident, optio vero illo ipsum tenetur dolor ad rem odio ducimus laborum quibusdam et impedit, similique. Cupiditate facilis quae aliquid maxime laudantium ut ratione reiciendis voluptas assumenda natus et tempora vero tenetur quaerat, dolore quia tempore, molestiae itaque magni libero excepturi. Quas est nostrum aliquam ducimus laborum illum sed odit quod error eum cupiditate, tempore tenetur nihil fugiat repudiandae doloremque, quisquam iure, accusantium exercitationem ipsa quia, quo voluptas labore reiciendis. Accusamus quod eaque tenetur accusantium sequi quo, adipisci molestiae, veniam eum autem deserunt tempora assumenda id porro cumque ratione quos! Odio voluptatum numquam ex ut. Ducimus officia consectetur aperiam eveniet earum consequuntur, sed quibusdam cumque odit doloribus fugiat mollitia officiis esse incidunt quia possimus! moon irure. Cosby sweater lomo jean shorts, williamsburg hoodie minim
+        qui you probably haven't heard of them et cardigan trust fund culpa biodiesel wes anderson aesthetic.
+        Nihil tattooed accusamus, cred irony biodiesel keffiyeh artisan ullamco consequat.</p>
+      <h5 id="item-1-2">Item 1-2</h5>
+      <p>Ad leggings keytar, brunch id art party dolor labore. Pitchfork yr enim lo-fi before they sold out
+        qui. Tumblr farm-to-table bicycle rights whatever. Anim keffiyeh carles cardigan. Velit seitan
+        mcsweeney's photo booth 3 wolf moon irure. Cosby sweater lomo jean shorts, williamsburg hoodie minim
+        qui you probably haven't heard of them et cardigan trust fund culpa biodiesel wes anderson aesthetic.
+        Nihil tattooed accusamus, cred irony biodiesel keffiyeh artisan ullamco consequat.</p>
+      <h4 id="item-2">Item 2</h4>
+      <p>Ad leggings keytar, brunch id art party dolor labore. Pitchfork yr enim lo-fi before they sold out
+        qui. Tumblr farm-to-table bicycle rights whatever. Anim keffiyeh carles cardigan. Velit seitan
+        mcsweeney's photo booth 3 wolf moon irure. Cosby sweater lomo jean shorts, williamsburg hoodie minim
+        qui you probably haven't heard Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste assumenda debitis sint iusto itaque dignissimos. Porro ducimus voluptate expedita. Nesciunt laudantium, fugiat error maiores labore dolorem, placeat corrupti neque saepe cum! Reiciendis voluptates, assumenda? Quidem et, deserunt corporis dolorem, quo veniam eos impedit quis. Iste doloremque suscipit eius distinctio, debitis tenetur nam, aliquam recusandae beatae exercitationem, quibusdam laboriosam, cupiditate! Cupiditate aliquam quasi quaerat distinctio incidunt mollitia optio molestiae vitae, culpa? Ullam sequi ex quisquam expedita numquam. Quis quia saepe officia similique eius cupiditate, impedit cumque ipsum quasi minus. Reprehenderit enim aliquid explicabo consequuntur recusandae adipisci laudantium, commodi totam animi illo unde quam sint nobis esse reiciendis molestiae quis libero deserunt, tempore voluptas quidem ea veniam. Tempora culpa placeat minus quisquam sapiente ut. Repellat asperiores, quos, impedit, rerum aut id veritatis ab quis perspiciatis reprehenderit unde sint quia vitae esse sapiente enim minus, natus itaque repudiandae voluptatem alias reiciendis laborum perferendis! of them et cardigan trust fund culpa biodiesel wes anderson aesthetic.
+        Nihil tattooed accusamus, cred irony biodiesel keffiyeh artisan ullamco consequat.</p>
+      <h4 id="item-3">Item 3</h4>
+      <p>Ad leggings keytar, brunch id art party dolor labore. Pitchfork yr enim lo-fi before they sold out
+        qui. Tumblr farm-to-table bicycle rights whatever. Anim keffiyeh carles cardigan. Velit seitan
+        mcsweeney's photo booth 3 wolf moon irure. Cosby sweater lomo jean shorts, williamsburg hoodie minim
+        qui you probably haven't heard of them et cardigan trust fund culpa biodiesel wes anderson aesthetic.
+        Nihil tattooed accusamus, cred irony biodiesel keffiyeh artisan ullamco consequat.</p>
+      <h5 id="item-3-1">Item 3-1</h5>
+      <p>Ad leggings keytar, brunch id art party dolor labore. Pitchfork yr enim lo-fi before they sold out
+        qui. Tumblr farm-to-table bicycle rights whatever. Anim keffiyeh carles cardigan. Velit seitan
+        mcsweeney's photo booth 3 wolf moon irure. Cosby sweater lomo jean shorts, williamsburg hoodie minim
+        qui you probably haven't heard of them et cardigan trust fund culpa biodiesel wes anderson aesthetic.
+        Nihil tattooed accusamus, cred irony biodiesel keffiyeh artisan ullamco consequat.</p>
+      <h5 id="item-3-2">Item 3-2</h5>
+      <p>Ad leggings keytar, brunch id art party dolor labore. Pitchfork yr enim lo-fi before they sold out
+        qui. Tumblr farm-to-table bicycle rights whatever. Anim keffiyeh carles cardigan. Velit seitan
+        mcsweeney's photo booth 3 wolf moon irure. Cosby sweater lomo jean shorts, williamsburg hoodie minim
+        qui you probably haven't heard of them et cardigan trust fund culpa biodiesel wes anderson aesthetic.
+        Nihil tattooed accusamus, cred irony biodiesel keffiyeh artisan ullamco consequat.</p>
+    </div>
+  </div>
+</div>
+  </main>
+
+<footer class="page-footer font-small shadow-sm-top pt-0" style="background-color: #2E2E2E">
+    <div class="container">
+      <div class="row py-2 d-flex align-items-center">
+        <div class="col-md-6 col-lg-5 text-center text-md-left mb-2 mb-md-0">
+          <h6 class="mb-0 white-text">
+            <a href="#" class="fb-ic ml-auto">
+              <i class="fab fa-pinterest white-text mr-2"></i>
+              Нас поддержало 20 человек
+            </a>
+          </h6>
+        </div>
+        <div class="col-md-6 col-lg-7 text-center text-md-right">
+          <a href="#" class="fb-ic ml-0">
+            <i class="fab fa-facebook white-text mr-3"></i>
+          </a>
+          <a href="#" class="fb-ic ml-0">
+            <i class="fab fa-twitter white-text mr-3"></i>
+          </a>
+          <a href="#" class="fb-ic ml-0">
+            <i class="fab fa-instagram white-text mr-3"></i>
+          </a>
+          <a href="#" class="fb-ic ml-0">
+            <i class="fab fa-gitter white-text mr-3"></i>
+          </a>
+          <a href="#" class="fb-ic ml-0">
+            <i class="fab fa-telegram white-text mr-3"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+
+  <div class="container mt-2 mb-0 text-center text-md-left">
+    <div class="row mt-3">
+      <div class="col-md-3 col-lg-4 col-xl-3 mb-2">
+        <h6 class="text-uppercase font-weight-bold"><strong>Our Company</strong></h6>
+        <hr class="deep-purple accent-2 mb-2 mt-0 d-inline-block mx-auto" style="width:60px;">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis animi deserunt, tenetur illo.</p>
+      </div>
+
+      <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-2">
+        <h6 class="text-uppercase font-weight-bold"><strong>Team</strong></h6>
+        <hr class="deep-purple accent-2 mb-2 mt-0 d-inline-block mx-auto" style="width:60px;">
+        <p><a href="#">ruRust</a></p>
+        <p><a href="#">ruRust</a></p>
+        <p><a href="#">ruRust</a></p>
+      </div>
+
+      <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+        <h6 class="text-uppercase font-weight-bold"><strong>Links</strong></h6>
+        <hr class="deep-purple accent-2 mb-2 mt-0 d-inline-block mx-auto" style="width:60px;">
+        <p><a href="#">Account</a></p>
+        <p><a href="#">Help</a></p>
+        <p><a href="#">ruRust</a></p>
+      </div>
+
+      <div class="col-md-4 col-lg-3 col-xl-3">
+        <h6 class="text-uppercase font-weight-bold"><strong>Contact</strong></h6>
+        <hr class="deep-purple accent-2 mb-2 mt-0 d-inline-block mx-auto" style="width:60px;">
+        <p><i class="fa fa-home mr-3"></i>Russia</p>
+        <p><i class="fa fa-envelope mr-3"></i>info@ruRust.dev</p>
+        <p><i class="fa fa-phone mr-3"></i>+7 909 533 45 67</p>
+      </div>
+    </div>
+  </div>
+
+
+    <div class="footer-copyright text-center py-3">© 2019 Copyright:
+    <a href="#">О Сайте</a>
+  </div>
+</footer>
+
+
+  <!-- SCRIPTS -->
+  <!-- JQuery -->
+  <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="js/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="js/mdb.js"></script>
+</body>
+
+</html>

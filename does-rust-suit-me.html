@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Подходит ли мне Rust?</title>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
+  <!-- Bootstrap core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <!-- Material Design Bootstrap -->
+  <link href="css/mdb.min.css" rel="stylesheet">
+  <!-- Your custom styles (optional) -->
+  <link href="css/style.css" rel="stylesheet">
+  <link rel="shortcut icon" href="img/rust-logo-16x16-blk.png" type="image/png">
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-none">
+      <a class="navbar-brand" href="index.html">
+      <img src="img/rust-logo-512x512.png" width="30" height="30" class="d-inline-block align-top" alt="Icon ruRust">
+      Rust Russian
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+       <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+        <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Учим Rust
+                    </a>
+                <div class="dropdown-menu">
+                    <form class="accordion" id="accordionExample">
+                        <div>
+                            <a class="nav-link border-bottom border-top" style="border-image: radial-gradient(#000000, #ffffff) 5;" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                Книги
+                            </a>
+                            <div id="collapseOne" class="collapse px-3 show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                                <a class="p-0 text-muted" href="http://rustbook.ru/" target="_blank">Язык программирования Rust</a>
+                            </div>
+                            <div id="collapseOne" class="collapse px-3 show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                                <a class="p-0 text-muted" href="https://github.com/ruRust/tlborm" target="_blank">Маленькая книжка по макросам в Rust</a>
+                            </div>
+                            <div id="collapseOne" class="collapse px-3 show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                                <a class="p-0 text-muted" href="https://github.com/ruRust/rustonomicon" target="_blank">Растономикон</a>
+                            </div>
+                            <div id="collapseOne" class="collapse px-3 show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                                <a class="p-0 text-muted" href="#">Rust на примерах</a>
+                            </div>
+                        </div>
+                        <div>
+                            <a class="nav-link border-bottom" style="border-image: radial-gradient(#000000, #ffffff) 5;" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                Статьи
+                            </a>
+                            <div id="collapseTwo" class="collapse px-3" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                                <a class="p-0 text-muted" href="https://rurust.github.io/cargo-docs-ru/" target="_blank">Документация по Cargo</a>
+                            </div>
+                            <div id="collapseTwo" class="collapse px-3" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                                <a class="p-0 text-muted" href="does-rust-suit-me.html">Подходит ли мне Rust?</a>
+                            </div>
+
+                        </div>
+                        <div>
+                            <a class="nav-link border-bottom" style="border-image: radial-gradient(#000000, #ffffff) 5;" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                Мне нужна помощь
+                            </a>
+                            <div id="collapseThree" class="collapse px-3" aria-labelledby="headingThree" data-parent="#accordionExample">
+                                <a class="p-0 text-muted" href="https://gitter.im/ruRust/easy" target="_blank">Чат для новичков</a>
+                            </div>
+                            <div id="collapseThree" class="collapse px-3" aria-labelledby="headingThree" data-parent="#accordionExample">
+                                <a class="p-0 text-muted" href="https://gitter.im/ruRust/general" target="_blank">Чат для сложных вопросов</a>
+                            </div>
+                            <div id="collapseThree" class="collapse px-3" aria-labelledby="headingThree" data-parent="#accordionExample">
+                                <a class="p-0 text-muted" href="https://ru.stackoverflow.com/questions/tagged/rust" target="_blank">Stackoverflow на русском</a>
+                            </div>
+                            <div id="collapseThree" class="collapse px-3" aria-labelledby="headingThree" data-parent="#accordionExample">
+                                <a class="p-0 text-muted" href="https://forum.rustycrate.ru/" target="_blank">Форум</a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            События
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Проекты
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="projects/index.html">Example page</a>
+            <a class="dropdown-item" href="sample_page.html">Sample page</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Новости
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div>
+        </li>
+  <!--       <li class="nav-item">
+          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+        </li> -->
+      </ul>
+  <!--  <form class="form-inline">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form> -->
+    </div>
+  </nav>
+<!--   <hr class="my-4">
+  <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+  <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a> -->
+  </div>
+</header>
+
+  <main>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-2 text-center bg-light p-2"><h5>Кто использует Rust</h5>
+          <div class="container"><i>В России и СНГ</i>
+            <div class="list-group list-group-flush text-sm-left">
+                <a href="https://habr.com/ru/company/beget/blog/301892/" class="list-group-item list-group-item-action bg-light" target="_blank">
+                  Beget
+                </a>
+                <a href="https://forum.rustycrate.ru/t/vakansiya-programmist-rust-v-ofis/137" class="list-group-item list-group-item-action bg-light" target="_blank">Art System</a>
+                <a href="https://hh.ru/vacancy/20723346" class="list-group-item list-group-item-action bg-light" target="_blank">Kupibilet</a>
+                <a href="https://hh.ru/vacancy/24099829" class="list-group-item list-group-item-action bg-light" target="_blank">Storiqa</a>
+                <a href="https://hh.ru/vacancy/24866535" class="list-group-item list-group-item-action bg-light" target="_blank">BitFury</a>
+            </div>
+          </div>
+          <div class="container"><i>В Мире</i>
+            <div class="list-group list-group-flush text-sm-left">
+                <a href="www.wired.com/2016/03/epic-story-dropboxs-exodus-amazon-cloud-empire/" class="list-group-item list-group-item-action bg-light" target="_blank">
+                  Dropbox
+                </a>
+                <a href="https://medium.com/coursera-engineering" class="list-group-item list-group-item-action bg-light" target="_blank">Coursera</a>
+                <a href="https://www.parity.io/parity/" class="list-group-item list-group-item-action bg-light" target="_blank">Ethcore</a>
+                <a href="https://hacks.mozilla.org/2016/07/shipping-rust-in-firefox/" class="list-group-item list-group-item-action bg-light" target="_blank">Mozilla: Firefox</a>
+                <a href="https://blog.mozilla.org/ted/2016/11/21/sccache-mozillas-distributed-compiler-cache-now-written-in-rust/" class="list-group-item list-group-item-action bg-light" target="_blank">Mozilla: Sccache</a>
+                <a href="https://labs.opendns.com/2013/10/04/zeromq-helping-us-block-malicious-domains/" class="list-group-item list-group-item-action bg-light" target="_blank">OpenDNS</a>
+                <a href="https://medium.com/safenetwork/the-ants-are-coming-2eb896273703" class="list-group-item list-group-item-action bg-light" target="_blank">MaidSafe</a>
+                <a href="https://blog.skylight.io/rust-means-never-having-to-close-a-socket/" class="list-group-item list-group-item-action bg-light" target="_blank">Skylight</a>
+                <a href="https://github.com/wit-ai/witd" class="list-group-item list-group-item-action bg-light" target="_blank">Wit.ai</a>
+                <a href="https://codius.org/blog/codius-rust/" class="list-group-item list-group-item-action bg-light" target="_blank">Codius</a>
+                <a href="http://slides.com/jonathanreem/implementing-http-1#/" class="list-group-item list-group-item-action bg-light" target="_blank">Terminal.com</a>
+                <a href="https://github.com/twitter/rpc-perf" class="list-group-item list-group-item-action bg-light" target="_blank">Twitter</a>
+            </div>
+          </div>
+          <div class="container"><i>Список интересных проектов на Rust</i>
+            <div class="list-group list-group-flush text-sm-left">
+                <a href="https://github.com/rust-lang/rust" class="list-group-item list-group-item-action bg-light" target="_blank">
+                  Rust — компилятор Rust написан на Rust.
+                </a>
+                <a href="https://github.com/rust-lang/cargo" class="list-group-item list-group-item-action bg-light" target="_blank">Cargo — менеджер пакетов для Rust.</a>
+                <a href="https://github.com/servo/servo" class="list-group-item list-group-item-action bg-light" target="_blank">Servo — многопоточный браузерный движок.</a>
+                <a href="https://github.com/redox-os/redox" class="list-group-item list-group-item-action bg-light" target="_blank">Redox — операционная система, полностью написанная на Rust.</a>
+                <a href="https://github.com/rust-unofficial/awesome-rust" class="list-group-item list-group-item-action bg-light" target="_blank">Ещё больше проектов.</a>
+            </div>
+            <p class="mt-4"><a href="https://github.com/ruRust/rustycrate.ru/edit/master/adopters.md" class="text-muted" target="_blank">Дополнения приветствуются.</a></p>
+          </div>
+        </div>
+        <div class="col-sm-10 bg-light p-2"><h5 class="text-muted"><i>Русскоязычный сайт о языке программирования Rust</i></h5>
+          
+          <div class="card mb-4 hoverable bg-light">
+            <div class="card-header">
+              12 Февраля 2018 • <a href="http://smallcultfollowing.com/babysteps/blog/2018/02/01/in-rust-ordinary-vectors-are-values/" class="teal-text" target="_blank">оригинал:</a> Niko Matsakis • перевод: bmusin • размышления • поддержите на <a href="https://www.patreon.com/mkpankov" target="_blank"><span class="teal-text fab fa-patreon"> Patreon</span></a>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">В Rust векторы — это значения</h5>
+              <p class="card-text">В последнее время я долго думал над персистентными коллекциями и в особенности над тем, как они относятся к Rust. Хочу поделиться с вами своими наблюдениями.</p>
+              <p class="card-text">О том, как устроены персистентные векторы, быстрее ли они традиционных коллекций — смотрите под катом.</p>
+              <a href="sample_page.html" class="btn grey float-right">Читать дальше</a>
+            </div>
+          </div>
+
+          <div class="card mb-4 hoverable bg-light">
+            <div class="card-header">
+              03 Февраля 2018 • <a href="https://boats.gitlab.io/blog/post/2017-12-27-things-explicit-is-not/" class="teal-text" target="_blank">оригинал:</a> withoutboats • перевод: bmusin & ozkriff • размышления • поддержите на <a href="https://www.patreon.com/mkpankov" target="_blank"><span class="teal-text fab fa-patreon"> Patreon</span></a>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Неявность</h5>
+              <p class="card-text">Часто, когда я обсуждаю дизайн Rust на RFCs или на internals-форуме с другими пользователями, я замечаю характерные высказывания насчёт явности. Обычно что-то в духе:</p>
+               <blockquote class="blockquote mb-0">
+                <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p> -->
+                <footer class="blockquote-footer">Мне не нравится <span class="brown-text"><дизайн возможности X>,</span> потому что он менее явный. Всякая магия уместна в <span class="brown-text"><другом языке Y>,</span> а Rust — это явный язык, так что следует использовать <span class="brown-text"><дизайн возможности Z></span>.
+                <!-- <cite title="Source Title">Source Title</cite> -->
+                </footer>
+              </blockquote>
+              <p class="card-text mt-3">Подобные комментарии жутко меня раздражают, потому что дают очень мало полезной обратной связи. Они лишь утверждают, что «явное лучше неявного» (при этом предполагается, что это бесспорное утверждение), и что какой-то дизайн менее явный, чем альтернатива (хотя часто даже не приводится объяснений, почему именно критикуемый дизайн менее явный), из чего следует, что их подход предпочтительнее.
+
+              <p class="card-text">В своей опубликованной ранее в этом году заметке Аарон пытался докопаться до сути вопроса явности, обсуждая <a href="https://blog.rust-lang.org/2017/03/02/lang-ergonomics.html" target="_blank"><span class="brown-text">размер контекста (reasoning footprint).</span></a> Он попытался разбить понятия «явность» и «неявность» на составные части, чтобы подготовить почву для суждения о явности дизайна той или иной возможности. Я же хочу изложить немного другой взгляд на проблему и попытаюсь очертить в общих словах, что мы подразумеваем под словом «явный».</p>
+
+              <p class="card-text">Английский — довольно нечёткий язык, в котором прилагательные имеют множества контекстно-зависимых значений, например, как используется слово «нечёткий» (fuzzy) в предыдущем предложении. Слово «явный» тоже многозначно, так что я не могу утверждать наверняка, что кто-то неправильно использует это слово. Однако я предлагаю выражать свои мысли при обсуждении «явности» более чётко, чтобы все лучше понимали, о чем именно идёт речь.</p>
+              <a href="sample_page.html" class="btn grey float-right">Читать дальше</a>
+            </div>
+          </div>
+
+          <div class="card mb-4 hoverable bg-light">
+            <div class="card-header">
+              15 Января 2018 • <a href="https://www.reddit.com/r/rust/comments/7p6n90/rust2018_back_to_the_roots/" class="teal-text" target="_blank">оригинал:</a> 0b_0101_001_1010 • перевод: bmusin • размышления • поддержите на <a href="https://www.patreon.com/mkpankov" target="_blank"><span class="teal-text fab fa-patreon"> Patreon</span></a>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Rust: Назад к корням</h5>
+              <p class="card-text">Мне приходит в голову множество разных целей для Rust в текущем 2018 году, к слову, 2017 год прошёл для меня очень быстро, так что я задался следующим вопросом: если бы я мог выбрать одну-единственную цель для Rust в 2018 году, то что бы я выбрал?</p>
+
+              <p class="card-text">Я буду пристрастен, и вот моё мнение:</p>
+              <p>О том, как устроены персистентные векторы, быстрее ли они традиционных коллекций — смотрите под катом.</p>
+              <a href="sample_page.html" class="btn grey float-right">Читать дальше</a>
+            </div>
+          </div>
+
+          <div class="card mb-4 hoverable bg-light">
+            <div class="card-header">
+              23 Января 2016 • <a href="http://www.jonathanturner.org/2016/01/rust-and-blub-paradox.html" class="teal-text" target="_blank">оригинал:</a> Jonathan Turner • перевод: Иван Иващенко • размышления • поддержите на <a href="https://www.patreon.com/mkpankov" target="_blank"><span class="teal-text fab fa-patreon"> Patreon</span></a>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Rust и парадокс Блаба</h5>
+              <p class="card-text">Несколько недель назад я наткнулся на <a href="https://www.quora.com/Which-language-has-the-brightest-future-in-replacement-of-C-between-D-Go-and-Rust-And-Why" target="_blank"><span class="brown-text">сравнительный анализ Rust, D и Go</span></a> от Андрея Александреску. Андрей, <a href="https://www.amazon.com/Modern-Design-Generic-Programming-Patterns/dp/0201704315" target="_blank"><span class="brown-text">уважаемый член сообщества C++</span></a> и главный разработчик <a href="https://dlang.org/" target="_blank"><span class="brown-text">языка программирования D,</span></a> нанёс Rust сокрушительный удар под конец своего повествования, высказав нечто, что выглядит довольно проницательным наблюдением:</p>
+
+              <blockquote class="blockquote mb-0">
+                <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p> -->
+                <footer class="blockquote-footer">Чтение кода на Rust навевает шутки о том, как «друзья не позволяют друзьям пропускать день ног» и вызывает в голове комические образы мужчин с халкообразным торсом, балансирующим на тощих ногах. Rust ставит во главу угла безопасность и ювелирное обращение с памятью. В действительности, это довольно редко является настоящий проблемой, и такой подход превращает процесс мышления и написания кода в монотонный и скучный процесс. 
+                  <!-- <cite title="Source Title">Source Title</cite> -->
+                </footer>
+              </blockquote>
+
+              <p class="card-text mt-3">После нескольких встреч с Андреем, увидев некоторые из его выступлений, я убедился, что он любит подшучивать. Тем не менее, давайте проглотим наживку. Эта шутка смешная только потому, что она выглядит смешной, или может быть потому, что в ней только доля шутки?</p>
+              <a href="sample_page.html" class="btn grey float-right">Читать дальше</a>
+            </div>
+          </div>
+
+
+
+<!--           <div class="card mb-4 hoverable">
+            <div class="card-header">
+              Quote
+            </div>
+            <div class="card-body">
+              <blockquote class="blockquote mb-0">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+              </blockquote>
+            </div>
+          </div>
+
+
+          <div class="card mb-4 hoverable">
+            <h5 class="card-header h5">Lorem ipsum dolor sit amet.</h5>
+            <div class="card-body">
+              <h5 class="card-title">Special title treatment</h5>
+              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+              <a href="#!" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div> -->
+
+
+
+          
+        </div>
+      </div>
+    </div>
+
+ 
+  </main>
+
+<footer class="page-footer font-small shadow-sm-top pt-0" style="background-color: #2E2E2E">
+    <div class="container">
+      <div class="row py-2 d-flex align-items-center">
+        <div class="col-md-6 col-lg-5 text-center text-md-left mb-2 mb-md-0">
+          <h6 class="mb-0 white-text">
+            <a href="#" class="fb-ic ml-auto">
+              <i class="fab fa-patreon white-text mr-2"></i>
+              Нас поддержало 20 человек
+            </a>
+          </h6>
+        </div>
+        <div class="col-md-6 col-lg-7 text-center text-md-right">
+          <a href="https://twitter.com/rustycrate1" class="fb-ic ml-0" target="_blank">
+            <i class="fab fa-twitter white-text mr-3"></i>
+          </a>
+          <a href="https://vk.com/rustycrate" class="fb-ic ml-0" target="_blank">
+            <i class="fab fa-vk white-text mr-3"></i>
+          </a>
+          <a href="https://web.facebook.com/rustycrate/?_rdc=1&_rdr" class="fb-ic ml-0" target="_blank">
+            <i class="fab fa-facebook white-text mr-3"></i>
+          </a>
+          <a href="#" class="fb-ic ml-0">
+            <i class="fab fa-telegram white-text mr-3"></i>
+          </a>
+          <a href="https://www.meetup.com/Rust-%D0%B2-%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B5/" class="fb-ic ml-0" target="_blank">
+            <i class="fab fa-meetup white-text mr-3"></i>
+          </a>
+          <a href="https://gitter.im/ruRust/home" class="fb-ic ml-0" target="_blank">
+            <i class="fab fa-gitter white-text mr-3"></i>
+          </a>
+          <a href="http://feeds.feedburner.com/rustycrate/yMtS" class="fb-ic ml-0" target="_blank">
+            <i class="fa fa-rss white-text mr-3"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+
+  <div class="container mt-2 mb-0 text-center text-md-left">
+    <div class="row mt-3">
+      <div class="col-md-3 col-lg-4 col-xl-3 mb-2">
+        <h6 class="text-uppercase font-weight-bold"><strong>Our Company</strong></h6>
+        <hr class="deep-purple accent-2 mb-2 mt-0 d-inline-block mx-auto" style="width:60px;">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis animi deserunt, tenetur illo.</p>
+      </div>
+
+      <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-2">
+        <h6 class="text-uppercase font-weight-bold"><strong>Team</strong></h6>
+        <hr class="deep-purple accent-2 mb-2 mt-0 d-inline-block mx-auto" style="width:60px;">
+        <p><a href="#">ruRust</a></p>
+        <p><a href="#">ruRust</a></p>
+        <p><a href="#">ruRust</a></p>
+      </div>
+
+      <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+        <h6 class="text-uppercase font-weight-bold"><strong>Links</strong></h6>
+        <hr class="deep-purple accent-2 mb-2 mt-0 d-inline-block mx-auto" style="width:60px;">
+        <p><a href="#">Account</a></p>
+        <p><a href="#">Help</a></p>
+        <p><a href="#">ruRust</a></p>
+      </div>
+
+      <div class="col-md-4 col-lg-3 col-xl-3">
+        <h6 class="text-uppercase font-weight-bold"><strong>Contact</strong></h6>
+        <hr class="deep-purple accent-2 mb-2 mt-0 d-inline-block mx-auto" style="width:60px;">
+        <p><i class="fa fa-home mr-3"></i>Russia</p>
+        <p><i class="fa fa-envelope mr-3"></i>info@ruRust.dev</p>
+        <p><i class="fa fa-phone mr-3"></i>+7 909 533 45 67</p>
+      </div>
+    </div>
+  </div>
+
+
+    <div class="footer-copyright text-center py-3">© 2019 Copyright:
+    <a href="#">О Сайте</a>
+  </div>
+</footer>
+
+
+  <!-- SCRIPTS -->
+  <!-- JQuery -->
+  <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="js/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="js/mdb.js"></script>
+</body>
+
+</html>

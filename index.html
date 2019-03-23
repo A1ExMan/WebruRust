@@ -14,21 +14,22 @@
   <link href="css/mdb.min.css" rel="stylesheet">
   <!-- Your custom styles (optional) -->
   <link href="css/style.css" rel="stylesheet">
+  <link rel="shortcut icon" href="img/rust-logo-16x16-blk.png" type="image/png">
 </head>
 
 <body>
   <header>
     <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-none">
-    <a class="navbar-brand" href="index.html">
+      <a class="navbar-brand" href="index.html">
       <img src="img/rust-logo-512x512.png" width="30" height="30" class="d-inline-block align-top" alt="Icon ruRust">
       Rust Russian
-    </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+       <span class="navbar-toggler-icon"></span>
+      </button>
 
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto">
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
   <!--       <li class="nav-item active">
           <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
         </li> -->
@@ -36,97 +37,60 @@
           <a class="nav-link" href="#">Link</a>
         </li> -->
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Статьи
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-<!--             <a class="dropdown-item" href="#">Книги</a>
-            <a class="dropdown-item" href="#"></a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">Something else here</a> -->
-            <div class="container">
-              <div class="panel-group" id="accordionMenu" role="tablist" aria-multiselectable="true">
-                <div class="panel panel-default">
-                  <div class="panel-heading" role="tab" id="headingOne">
-                    <h4 class="panel-title">
-                    <a role="button" data-toggle="collapse" data-parent="#accordionMenu" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                    Книги
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Учим Rust
                     </a>
-                  </h4>
-                  </div>
-                  <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
-                    <div class="panel-body">
-                      <ul class="nav">
-                        <li><a href="#">- Язык программирования Rust</a></li>
-                        <li><a href="#">- Маленькая книжка по макросам в Rust</a></li>
-                        <li><a href="#">- Растономикон</a></li>
-                        <li><a href="#">- Rust на примерах</a></li>
-                      </ul>
-                    </div>
-                  </div>
+                <div class="dropdown-menu">
+                    <form class="accordion" id="accordionExample">
+                        <div>
+                            <a class="nav-link border-bottom border-top" style="border-image: radial-gradient(#000000, #ffffff) 5;" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                Книги
+                            </a>
+                            <div id="collapseOne" class="collapse px-3 show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                                <a class="p-0 text-muted" href="http://rustbook.ru/" target="_blank">Язык программирования Rust</a>
+                            </div>
+                            <div id="collapseOne" class="collapse px-3 show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                                <a class="p-0 text-muted" href="https://github.com/ruRust/tlborm" target="_blank">Маленькая книжка по макросам в Rust</a>
+                            </div>
+                            <div id="collapseOne" class="collapse px-3 show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                                <a class="p-0 text-muted" href="https://github.com/ruRust/rustonomicon" target="_blank">Растономикон</a>
+                            </div>
+                            <div id="collapseOne" class="collapse px-3 show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                                <a class="p-0 text-muted" href="#">Rust на примерах</a>
+                            </div>
+                        </div>
+                        <div>
+                            <a class="nav-link border-bottom" style="border-image: radial-gradient(#000000, #ffffff) 5;" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                Статьи
+                            </a>
+                            <div id="collapseTwo" class="collapse px-3" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                                <a class="p-0 text-muted" href="https://rurust.github.io/cargo-docs-ru/" target="_blank">Документация по Cargo</a>
+                            </div>
+                            <div id="collapseTwo" class="collapse px-3" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                                <a class="p-0 text-muted" href="does-rust-suit-me.html">Подходит ли мне Rust?</a>
+                            </div>
+
+                        </div>
+                        <div>
+                            <a class="nav-link border-bottom" style="border-image: radial-gradient(#000000, #ffffff) 5;" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                Мне нужна помощь
+                            </a>
+                            <div id="collapseThree" class="collapse px-3" aria-labelledby="headingThree" data-parent="#accordionExample">
+                                <a class="p-0 text-muted" href="https://gitter.im/ruRust/easy" target="_blank">Чат для новичков</a>
+                            </div>
+                            <div id="collapseThree" class="collapse px-3" aria-labelledby="headingThree" data-parent="#accordionExample">
+                                <a class="p-0 text-muted" href="https://gitter.im/ruRust/general" target="_blank">Чат для сложных вопросов</a>
+                            </div>
+                            <div id="collapseThree" class="collapse px-3" aria-labelledby="headingThree" data-parent="#accordionExample">
+                                <a class="p-0 text-muted" href="https://ru.stackoverflow.com/questions/tagged/rust" target="_blank">Stackoverflow на русском</a>
+                            </div>
+                            <div id="collapseThree" class="collapse px-3" aria-labelledby="headingThree" data-parent="#accordionExample">
+                                <a class="p-0 text-muted" href="https://forum.rustycrate.ru/" target="_blank">Форум</a>
+                            </div>
+                        </div>
+                    </form>
                 </div>
-                <div class="panel panel-default">
-                  <div class="panel-heading" role="tab" id="headingTwo">
-                    <h4 class="panel-title">
-                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordionMenu" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                      Статьи
-                    </a>
-                    </h4>
-                    </div>
-                    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
-                      <div class="panel-body">
-                        <ul class="nav">
-                          <li><a href="#">- Документация по Cargo</a></li>
-                          <li><a href="#">- Подходит ли мне Rust?</a></li>
-                          <!-- <li><a href="#">item 3</a></li>
-                          <li><a href="#">item 4</a></li> -->
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="panel panel-default">
-                    <div class="panel-heading" role="tab" id="headingThree">
-                      <h4 class="panel-title">
-                      <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordionMenu" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                        Мне нужна помощь
-                      </a>
-                    </h4>
-                    </div>
-                    <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
-                      <div class="panel-body">
-                        <ul class="nav">
-                          <li><a href="#">- Чат для новичков</a></li>
-                          <li><a href="#">- Чат для сложных вопросов</a></li>
-                          <li><a href="#">- Stackoverflow на русском</a></li>
-                          <li><a href="#">- Форум</a></li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-    
-    
-            <!--     <div class="panel panel-default">
-                  <div class="panel-heading" role="tab" id="headingFour">
-                    <h4 class="panel-title">
-                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordionMenu" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                      Menu 3
-                    </a>
-                  </h4>
-                  </div>
-                  <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
-                    <div class="panel-body">
-                      <ul class="nav">
-                        <li><a href="#">item 1</a></li>
-                        <li><a href="#">item 2</a></li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-                
-              </div>
-            </div> -->
-          </div>
-        </li>
+            </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             События
@@ -144,7 +108,7 @@
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
             <a class="dropdown-item" href="projects/index.html">Example page</a>
-            <a class="dropdown-item" href="#">Another action</a>
+            <a class="dropdown-item" href="sample_page.html">Sample page</a>
             <div class="dropdown-divider"></div>
             <a class="dropdown-item" href="#">Something else here</a>
           </div>
@@ -154,7 +118,7 @@
             Новости
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="news.html">Action</a>
+            <a class="dropdown-item" href="#">Action</a>
             <a class="dropdown-item" href="#">Another action</a>
             <div class="dropdown-divider"></div>
             <a class="dropdown-item" href="#">Something else here</a>
@@ -319,7 +283,7 @@
               <div class="row justify-content-start align-items-center">
                 <div class="btn-group-vertical btn-group-lg w-50">
                   <button class="btn btn-primary btn-sm white-text" type="button"><i class="fab  fa-telegram fa-lg mr-1"></i><b>Telegram</b></button>
-                  <button class="btn btn-sm white-text" type="button" style="background-color: #f90069;"><i class="fab fa-gitter fa-lg mr-1"></i><b>Gitter</b></span></button>
+                  <button class="btn btn-sm white-text" type="button" style="background-color: #f90069;"><i class="fab fa-gitter fa-lg mr-1"></i><b>Gitter</b></button>
                 </div>
               </div>
             </div>
@@ -333,26 +297,32 @@
         <div class="col-md-6 col-lg-5 text-center text-md-left mb-2 mb-md-0">
           <h6 class="mb-0 white-text">
             <a href="#" class="fb-ic ml-auto">
-              <i class="fab fa-pinterest white-text mr-2"></i>
+              <i class="fab fa-patreon white-text mr-2"></i>
               Нас поддержало 20 человек
             </a>
           </h6>
         </div>
         <div class="col-md-6 col-lg-7 text-center text-md-right">
-          <a href="#" class="fb-ic ml-0">
+          <a href="https://twitter.com/rustycrate1" class="fb-ic ml-0" target="_blank">
+            <i class="fab fa-twitter white-text mr-3"></i>
+          </a>
+          <a href="https://vk.com/rustycrate" class="fb-ic ml-0" target="_blank">
+            <i class="fab fa-vk white-text mr-3"></i>
+          </a>
+          <a href="https://web.facebook.com/rustycrate/?_rdc=1&_rdr" class="fb-ic ml-0" target="_blank">
             <i class="fab fa-facebook white-text mr-3"></i>
           </a>
           <a href="#" class="fb-ic ml-0">
-            <i class="fab fa-twitter white-text mr-3"></i>
+            <i class="fab fa-telegram white-text mr-3"></i>
           </a>
-          <a href="#" class="fb-ic ml-0">
-            <i class="fab fa-instagram white-text mr-3"></i>
+          <a href="https://www.meetup.com/Rust-%D0%B2-%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B5/" class="fb-ic ml-0" target="_blank">
+            <i class="fab fa-meetup white-text mr-3"></i>
           </a>
-          <a href="#" class="fb-ic ml-0">
+          <a href="https://gitter.im/ruRust/home" class="fb-ic ml-0" target="_blank">
             <i class="fab fa-gitter white-text mr-3"></i>
           </a>
-          <a href="#" class="fb-ic ml-0">
-            <i class="fab fa-telegram white-text mr-3"></i>
+          <a href="http://feeds.feedburner.com/rustycrate/yMtS" class="fb-ic ml-0" target="_blank">
+            <i class="fa fa-rss white-text mr-3"></i>
           </a>
         </div>
       </div>
